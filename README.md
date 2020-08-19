@@ -13,7 +13,7 @@ Based on the annotation data provided above, several models have been trained on
 * **Category**: Labels: "art", "business", "healthcare", "media", "ngo", "other", "political_supporter", "politics", "adult_content", "public_services", "religion", "science", "sports"
 * **Type**: Labels: "individual", "institution", "unclear"
 
-The models made available are from two different model types (BERT-Large and Fasttext).
+The models made available are from two different model types (BERT-like and Fasttext). For more info regarding training procedure, please check the SI of the paper.
 
 ### BERT
 The easiest way to use the BERT models is by using the PyTorch models together with the [huggingface/transformers](https://github.com/huggingface/transformers) library. To install run
