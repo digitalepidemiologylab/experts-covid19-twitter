@@ -36,7 +36,7 @@ pipe('artiste et paintre')
 # [{'label': 'art', 'score': 0.9069588780403137}]
 ```
 
-For the TF checkpoints you should use them with [tensorflow/models](https://github.com/tensorflow/models/tree/master/official/nlp/bert)
+For the TF checkpoints you should use them with [tensorflow/models](https://github.com/tensorflow/models/tree/master/official/nlp/bert).
 
 ## FastText
 To use the FastText models runs
@@ -51,3 +51,14 @@ model = fasttext.load_model('./category_fasttext/model.bin')
 print(model.predict('virologist'))
 # (('__label__science',), array([0.98916745]))
 ```
+
+## Download models
+
+| Description                                         | Language  | Dataset  | Identifier          | Download |
+|-----------------------------------------------------|-----------|----------|---------------------|----------|
+| BERT multilingual category (BERT-multlingual cased) | multilang | category | `bert-multilang-pt` | [PyTorch](https://digitalepidemiologylab-publications-public.s3.eu-central-1.amazonaws.com/experts-covid19-twitter/models/category_bert_multilang_pt.tar.gz) \| [TF](https://digitalepidemiologylab-publications-public.s3.eu-central-1.amazonaws.com/experts-covid19-twitter/models/category_bert_multilang_tf.tar.gz) |
+| BERT multilingual type (BERT-multlingual cased)     | multilang | type     | `bert-multilang-pt` | [PyTorch](https://digitalepidemiologylab-publications-public.s3.eu-central-1.amazonaws.com/experts-covid19-twitter/models/type_bert_multilang_pt.tar.gz) \| [TF](https://digitalepidemiologylab-publications-public.s3.eu-central-1.amazonaws.com/experts-covid19-twitter/models/type_bert_multilang_tf.tar.gz)  |
+| BERT English category (BERT-large uncased)          | en        | category | `bert-english`      | [PyTorch](https://digitalepidemiologylab-publications-public.s3.eu-central-1.amazonaws.com/experts-covid19-twitter/models/category_bert_en_pt.tar.gz) \| [TF](https://digitalepidemiologylab-publications-public.s3.eu-central-1.amazonaws.com/experts-covid19-twitter/models/category_bert_en_tf.tar.gz) |
+| BERT English type (BERT-large uncased)              | en        | type     | `bert-english`      | [PyTorch](https://digitalepidemiologylab-publications-public.s3.eu-central-1.amazonaws.com/experts-covid19-twitter/models/type_bert_en_pt.tar.gz) \| [TF](https://digitalepidemiologylab-publications-public.s3.eu-central-1.amazonaws.com/experts-covid19-twitter/models/type_bert_en_tf.tar.gz)  |
+| FastText english category                           | en        | category | `fasttext-english`  | [Download](https://digitalepidemiologylab-publications-public.s3.eu-central-1.amazonaws.com/experts-covid19-twitter/models/category_fasttext.tar.gz) |
+| FastText english type                               | en        | type     | `fasttext-english`  | [Download](https://digitalepidemiologylab-publications-public.s3.eu-central-1.amazonaws.com/experts-covid19-twitter/models/type_fasttext.tar.gz) |
