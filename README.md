@@ -46,7 +46,7 @@ Additionally, the following category labels have a more fine-grained (uncollapse
 Please refer to [our paper](https://arxiv.org/abs/2008.08364) for a more in-detail explanation of the individual annotations, and how the annotation was performed.
 
 ## Text classification models
-Based on the annotation data provided above, several models have been trained on the **category** (collapsed) and **type** objectives (as described above).
+Based on the annotation data provided above, several models have been trained on the **category** (collapsed) and **type** objectives.
 
 The models made available are from two different model types (BERT-like and Fasttext). For more info regarding training procedure, please check the SI of the paper.
 
