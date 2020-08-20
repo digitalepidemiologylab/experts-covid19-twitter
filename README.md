@@ -74,7 +74,7 @@ pipe('artiste et paintre')
 For the TF checkpoints you should use them with [tensorflow/models](https://github.com/tensorflow/models/tree/master/official/nlp/bert).
 
 ## FastText
-To use the FastText models runs
+To use the FastText models run
 ```bash
 pip install fasttext
 ```
