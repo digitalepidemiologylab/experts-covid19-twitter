@@ -7,6 +7,29 @@ If you intend to use any of these materials, please make sure to cite the work a
 <citation to be added> 
 ```
 ## Annotation data
+User descriptions have been annotated by `type` and `category`. Find the data [here](data/annotation_data/annotation_data.csv).
+
+The CSV file has the following columns:
+| Column        | Description                                            |
+|---------------|--------------------------------------------------------|
+| user.id       | Twitter user ID                                        |
+| category      | Consensus category (collapsed*)                         |
+| type          | Consensus type                                         |
+| tweeting_lang | Language user is tweeting in usually                   |
+| bio_lang      | Language bio (user description) is written in          |
+| type_1        | Type annotation by annotator 1                         |
+| type_2        | Type annotation by annotator 2                         |
+| type_3        | Type annotation by annotator 3                         |
+| type_4        | Type annotation by annotator 4 (if available)          |
+| category_1    | Categories (uncollapsed) by annotator 1                |
+| category_2    | Categories (uncollapsed) by annotator 2                |
+| category_3    | Categories (uncollapsed) by annotator 3                |
+| category_4    | Categories (uncollapsed) by annotator 4 (if available) |
+
+The annotations contain the following labels:
+* **Category**: Labels: "art", "business", "healthcare", "media", "ngo", "other", "political_supporter", "politics", "adult_content", "public_services", "religion", "science", "sports"
+* **Type**: Labels: "individual", "institution", "unclear"
+
 
 ## Text classification models
 Based on the annotation data provided above, several models have been trained on two different multiclass objectives:
