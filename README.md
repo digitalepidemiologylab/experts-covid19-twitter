@@ -1,6 +1,6 @@
 # Experts and Authorities receive disproportionate attention on Twitter during the COVID-19 crisis
 
-This repository contains annotation data, ML models, and Twitter data related to the work ["Experts and Authorities receive disproportionate attention on Twitter during the COVID-19 crisis"](https://arxiv.org/abs/2008.08364).
+This repository contains annotation data, and ML models related to the work ["Experts and Authorities receive disproportionate attention on Twitter during the COVID-19 crisis"](https://arxiv.org/abs/2008.08364).
 
 If you intend to use any of these materials, please make sure to cite the work accordingly:
 
