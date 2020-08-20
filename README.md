@@ -27,14 +27,17 @@ The CSV file has the following columns:
 | category_4    | Categories (uncollapsed) by annotator 4 (if available) |
 
 The annotations contain the following labels:
-* **Category**: Labels: "art", "business", "healthcare", "media", "ngo", "other", "political_supporter", "politics", "adult_content", "public_services", "religion", "science", "sports"
+* **Category (collapsed)**: Labels: "art", "business", "healthcare", "media", "ngo", "other", "political_supporter", "politics", "adult_content", "public_services", "religion", "science", "sports"
 * **Type**: Labels: "individual", "institution", "unclear"
 
+Additionally, the following category labels have a more fine-grainded annotation:
+* "media": "Media: News", "Media: Scientific News and Communication", "Media: Other Media"
+* "science": "Science: Engineering and Technology", "Science: Life Sciences", "Science: Social Sciences", "Science: Other Sciences"
+
+Please refer to our paper for a more in-detail explanation for the individual annotations, and how the annotation was performed.
 
 ## Text classification models
-Based on the annotation data provided above, several models have been trained on two different multiclass objectives:
-* **Category**: Labels: "art", "business", "healthcare", "media", "ngo", "other", "political_supporter", "politics", "adult_content", "public_services", "religion", "science", "sports"
-* **Type**: Labels: "individual", "institution", "unclear"
+Based on the annotation data provided above, several models have been trained on the **category** (collapsed) and **type** objectives (as described above).
 
 The models made available are from two different model types (BERT-like and Fasttext). For more info regarding training procedure, please check the SI of the paper.
 
