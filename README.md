@@ -1,13 +1,22 @@
 # Experts and Authorities receive disproportionate attention on Twitter during the COVID-19 crisis
 
-This repository contains annotation data, ML models, and Twitter data related to the work "Experts and Authorities receive disproportionate attention on Twitter during the COVID-19 crisis".
+This repository contains annotation data, ML models, and Twitter data related to the work ["Experts and Authorities receive disproportionate attention on Twitter during the COVID-19 crisis"](https://arxiv.org/abs/2008.08364).
 
 If you intend to use any of these materials, please make sure to cite the work accordingly:
-```
-<citation to be added> 
+
+Gligorić, Kristina et al. “Experts and authorities receive disproportionate attention on Twitter during the COVID-19 crisis.” (2020).
+```bibtex
+@misc{gligori2020experts,
+    title={Experts and authorities receive disproportionate attention on Twitter during the COVID-19 crisis},
+    author={Kristina Gligorić and Manoel Horta Ribeiro and Martin Müller and Olesia Altunina and Maxime Peyrard and Marcel Salathé and Giovanni Colavizza and Robert West},
+    year={2020},
+    eprint={2008.08364},
+    archivePrefix={arXiv},
+    primaryClass={cs.SI}
+}
 ```
 ## Annotation data
-User descriptions have been annotated by `type` and `category`. Find the data [here](data/annotation_data/annotation_data.csv).
+User descriptions have been annotated by **type** and **category**. Find the data [here](data/annotation_data/annotation_data.csv).
 
 The CSV file has the following columns:
 | Column        | Description                                            |
@@ -30,11 +39,11 @@ The annotations contain the following labels:
 * **Category (collapsed)**: Labels: "art", "business", "healthcare", "media", "ngo", "other", "political_supporter", "politics", "adult_content", "public_services", "religion", "science", "sports"
 * **Type**: Labels: "individual", "institution", "unclear"
 
-Additionally, the following category labels have a more fine-grainded annotation:
+Additionally, the following category labels have a more fine-grained annotation:
 * "media": "Media: News", "Media: Scientific News and Communication", "Media: Other Media"
 * "science": "Science: Engineering and Technology", "Science: Life Sciences", "Science: Social Sciences", "Science: Other Sciences"
 
-Please refer to our paper for a more in-detail explanation for the individual annotations, and how the annotation was performed.
+Please refer to [our paper](https://arxiv.org/abs/2008.08364) for a more in-detail explanation for the individual annotations, and how the annotation was performed.
 
 ## Text classification models
 Based on the annotation data provided above, several models have been trained on the **category** (collapsed) and **type** objectives (as described above).
