@@ -22,7 +22,7 @@ The CSV file has the following columns:
 | Column        | Description                                            |
 |---------------|--------------------------------------------------------|
 | user.id       | Twitter user ID                                        |
-| category      | Consensus category (collapsed*)                         |
+| category      | Consensus category (collapsed)                         |
 | type          | Consensus type                                         |
 | tweeting_lang | Language user is tweeting in usually                   |
 | bio_lang      | Language bio (user description) is written in          |
@@ -39,11 +39,11 @@ The annotations contain the following labels:
 * **Category (collapsed)**: Labels: "art", "business", "healthcare", "media", "ngo", "other", "political_supporter", "politics", "adult_content", "public_services", "religion", "science", "sports"
 * **Type**: Labels: "individual", "institution", "unclear"
 
-Additionally, the following category labels have a more fine-grained annotation:
+Additionally, the following category labels have a more fine-grained (uncollapsed) annotation:
 * "media": "Media: News", "Media: Scientific News and Communication", "Media: Other Media"
 * "science": "Science: Engineering and Technology", "Science: Life Sciences", "Science: Social Sciences", "Science: Other Sciences"
 
-Please refer to [our paper](https://arxiv.org/abs/2008.08364) for a more in-detail explanation for the individual annotations, and how the annotation was performed.
+Please refer to [our paper](https://arxiv.org/abs/2008.08364) for a more in-detail explanation of the individual annotations, and how the annotation was performed.
 
 ## Text classification models
 Based on the annotation data provided above, several models have been trained on the **category** (collapsed) and **type** objectives (as described above).
