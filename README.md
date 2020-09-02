@@ -1,5 +1,7 @@
 # Experts and Authorities receive disproportionate attention on Twitter during the COVID-19 crisis
 
+[![DOI](https://zenodo.org/badge/288504832.svg)](https://zenodo.org/badge/latestdoi/288504832)
+
 This repository contains annotation data, and ML models related to the work ["Experts and Authorities receive disproportionate attention on Twitter during the COVID-19 crisis"](https://arxiv.org/abs/2008.08364).
 
 If you intend to use any of these materials, please make sure to cite the work accordingly:
